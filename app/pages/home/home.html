@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+  <my-slide (slideClick)="onSlideClick($event)" [slides]="pageSlides" [pageNumber]="7"></my-slide>
+
+  <h2>{{pageContent}}</h2>
+
+</ion-content>
